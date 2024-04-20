@@ -2,7 +2,18 @@
 const Experience = () => {
 
     return (
-        <div>Experience</div>
+        <div>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+            <p>Experience</p>
+        </div>
     )
 }
 

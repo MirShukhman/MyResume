@@ -50,7 +50,7 @@ const SendMessage = () => {
                 <textarea
                     ref={message}
                     placeholder="Your Message"
-                    rows={4} cols={50} required />< br />
+                    rows={4} cols={30} required />< br />
                 <button type='submit'> Send Message </button>
             </form>
 

@@ -1,6 +1,5 @@
 
 import './style/App.css';
-import SendMessage from './comps/SendMessage';
 import ButtonComp from './comps/ButtonComp';
 import Footer from './comps/Footer';
 
@@ -13,23 +12,36 @@ function App() {
       </div>
 
       <div className='main'>
-        <div className='left'>
-          <ButtonComp title={'Projects'} />
-          <ButtonComp title={'Skills'} />
-          <ButtonComp title={'Experience'} />
-          <ButtonComp title={'Education'} />
-        </div>
+        {/* Conditional rendering for mobile and PC */}
+        {window.innerWidth < 768 ? (
+          <>
+            <ButtonComp title={'Projects'} />
+            <ButtonComp title={'Skills'} />
+            <ButtonComp title={'Experience'} />
+            <ButtonComp title={'Education'} />
+            <ButtonComp title={'About Me'} />
+            <ButtonComp title={'Socials'} />
+            <ButtonComp title={'Get In Touch'} />
+          </>
+        ) : (
+          <>
+            <ButtonComp title={'Projects'} />
+            <ButtonComp title={'About Me'} />
 
-        <div className='right'>
-          <ButtonComp title={'About Me'} />
-          <ButtonComp title={'Socials'} />
-          <SendMessage />
-        </div>
+            <ButtonComp title={'Skills'} />
+            <ButtonComp title={'Socials'} />
+
+            <ButtonComp title={'Experience'} />
+            <ButtonComp title={'Get In Touch'} />
+
+            <ButtonComp title={'Education'} />
+          </>
+        )}
       </div>
 
       <Footer />
 
-    </div>
+    </div >
   );
 }
 

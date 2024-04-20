@@ -1,12 +1,54 @@
+html {
+  height: 99vh;
+}
+
 body {
-  height: 100vh;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
 }
 
 .App {
-  height: 100vh;
+  width: 80vw;
+  height: 98vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Mobile-specific styles */
+  .App {
+    width: 100vw;
+  }
+
+  .main {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+}
+
+.footer-caption {
+  color: gray;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-icon {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2.5rem;
+  color: gray;
 }

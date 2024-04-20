@@ -1,0 +1,27 @@
+.section-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-header {
+    width: 311px
+}
+
+.section-header p {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 3rem;
+    text-align: left;
+}
+
+#get-in-touch {
+    grid-row: 3 / span 2;
+    grid-column: 2;
+}
+
+.message-box {
+    text-align: center;
+}
