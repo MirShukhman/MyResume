@@ -3,25 +3,140 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 3%;
+    align-self: start;
 }
 
 .section-header {
-    width: 311px
+    width: 390px;
 }
 
 .section-header p {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
+    font-family: var(--section-header-font);
+    font-weight: 500;
     letter-spacing: 0.05em;
     font-size: 3rem;
     text-align: left;
+    margin-top: 0.6em;
+    margin-bottom: 0em;
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
-#get-in-touch {
-    grid-row: 3 / span 2;
+@media only screen and (max-width: 768px) {
+
+    /* Mobile-specific styles */
+    .section-comp {
+        margin-bottom: 3%;
+    }
+
+    .section-header {
+        width: 300px;
+    }
+
+    .section-header p {
+        font-size: 2.2rem;
+    }
+
+    .rectangle {
+        height: 1.4rem !important;
+        margin-top: -15px !important;
+        margin-left: 4rem !important;
+    }
+
+    .section-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0rem;
+    }
+
+}
+
+.circle-icon {
+    font-size: 1.8rem;
+    color: rgb(128, 128, 128, 0.8);
+    margin-right: 0.5em;
+    transition: 0.3s;
+}
+
+#circle-icon-down {
+    transform: rotate(90deg);
+}
+
+.rectangle {
+    height: 1.6rem;
+    margin-left: 4.5rem;
+    transition: 0.3s;
+    position: absolute;
+    max-width: 390px;
+    margin-top: -20px;
+    z-index: -1;
+    width: 200px;
+}
+
+.section-comp:hover .rectangle {
+    transform: scaleX(1.2) translateX(15%);
+}
+
+.section-comp:hover .section-header p {
+    letter-spacing: 0.1em;
+}
+
+.section-comp:hover .circle-icon {
+    margin-right: 0.2em;
+}
+
+#Projects {
+    background-color: var(--red);
+}
+
+#Skills {
+    background-color: var(--orange);
+}
+
+#Experience {
+    background-color: var(--yellow);
+}
+
+#Education {
+    background-color: var(--green);
+}
+
+#About-me {
+    background-color: var(--blue);
+}
+
+#Socials {
+    background-color: var(--purple);
+}
+
+#Get-in-touch {
+    background-color: var(--pink);
+}
+
+#get-in-touch-section {
+    grid-row: 3 / span 1;
     grid-column: 2;
 }
 
 .message-box {
     text-align: center;
+}
+
+#closed {
+    max-height: 0.001px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#open {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.section-content {
+    width: 70%;
+    margin-right: 3rem;
 }

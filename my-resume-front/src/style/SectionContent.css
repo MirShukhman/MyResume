@@ -1,0 +1,375 @@
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill p {
+    cursor: default;
+    font-size: 1.2rem;
+    font-family: var(--footer-font);
+}
+
+.skill-icon {
+    color: gray;
+    font-size: 2.5rem;
+}
+
+.skill-icon:hover {
+    color: var(--orange);
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Mobile-specific styles */
+    .socials {
+        margin-left: 4rem;
+    }
+}
+
+.socials .row {
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.socials-icon {
+    font-size: 2rem;
+    color: grey;
+    margin-right: 2rem;
+    transition: ease 0.3s;
+}
+
+.socials p {
+    cursor: default;
+    font-size: 1.2rem;
+    font-family: var(--footer-font);
+    transition: ease 0.3s;
+}
+
+.socials .row:hover .socials-icon {
+    transform: scale(1.1);
+    color: var(--purple);
+}
+
+#row-github {
+    border-top: dashed var(--purple);
+    border-bottom: dashed var(--purple);
+    width: 80%;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    margin-top: 0.5rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: grey;
+    margin-right: 2rem;
+    transition: ease 0.3s;
+}
+
+.contact .row:hover .contact-icon {
+    transform: scale(1.1);
+    color: var(--pink);
+}
+
+.contact p {
+    cursor: default;
+    font-size: 1rem;
+    font-family: var(--footer-font);
+    transition: ease 0.3s;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#seperator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line {
+    height: 3px;
+    background-color: var(--pink);
+    width: 35%;
+}
+
+#or {
+    font-family: var(--section-header-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.message-box {
+    margin-top: 1rem;
+}
+
+.message-box p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.message-box textarea {
+    resize: none;
+    width: 100%;
+    font-family: var(--footer-font);
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    transition: 0.4s ease;
+}
+
+.message-box .row textarea:focus {
+    outline: none;
+    background-color: rgb(249, 132, 200, 0.2);
+    border: solid 1px rgb(249, 132, 200, 0.05);
+    border-radius: 0;
+}
+
+.message-box .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+
+}
+
+.message-box .row label {
+    font-family: var(--footer-font);
+    font-size: 1.2rem;
+}
+
+.message-box .row input {
+    font-size: 1rem;
+    font-family: var(--footer-font);
+    border-top: none;
+    border-bottom: solid 1px black;
+    border-left: none;
+    border-right: none;
+    width: 11.9rem;
+    transition: 0.4s ease;
+}
+
+.message-box .row input:focus {
+    outline: none;
+    border-bottom: solid 1.5px var(--pink);
+    background-color: var(--pink);
+}
+
+#border-button {
+    font-family: var(--footer-font);
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    padding-top: 0.48rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0rem;
+    outline: none;
+    border: solid black 1px;
+    background-color: transparent;
+    transition: 0.2s;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+#border-button:hover {
+    transform: translate(12.5px, 14.5px);
+    /* Move 5px right and 5px down on hover */
+    border: solid var(--pink) 1px;
+}
+
+#border-button:active {
+    background-color: rgba(207, 119, 169, 0.8);
+    border: solid rgba(207, 119, 169, 0.8) 1px;
+    color: white;
+}
+
+.button-shadow {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 2.8rem;
+    margin-left: 0rem;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+    max-width: 390px;
+    margin-top: -35px;
+    width: 173px;
+    position: relative;
+    z-index: -1;
+}
+
+#send-message-button {
+    background-color: var(--pink);
+}
+
+/* Experience */
+.experience {
+    margin-top: 2rem;
+}
+
+.job {
+    font-family: var(--footer-font);
+    text-align: left;
+    border-bottom: dashed var(--yellow);
+    margin-bottom: 1rem;
+    transition: ease 0.3s;
+}
+
+.job:hover {
+    transform: scale(1.1);
+}
+
+.job .row {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.job-icon {
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+.job .row p {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    font-family: var(--section-header-font);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.job-inner {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-inner p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(75, 74, 74);
+}
+
+.job-dates {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Projects */
+.projects {
+    margin-top: 1rem;
+}
+
+.project {
+    border-bottom: dashed var(--red);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.screenshot {
+    background-image: url(./images/eventhub.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 110px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: var(--section-header-font);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#eventhub {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: rgb(219, 162, 148);
+}
+
+.proj-bottom {
+    display: flex;
+    max-width: 390px;
+}
+
+.description {
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#read-more-button {
+    background-color: rgba(255, 105, 97, 0.3);
+    width: 115px;
+    height: 2.5rem;
+    margin-left: 0.8rem;
+}
+
+#code-button {
+    background-color: rgba(255, 105, 97, 0.5);
+    width: 90px;
+    height: 2.5rem;
+    margin-left: 0.8rem;
+}
+
+#live-button {
+    background-color: rgba(255, 105, 97, 0.7);
+    width: 83px;
+    height: 2.5rem;
+    margin-left: 0.8rem;
+}
+
+.project-button {
+    text-align: left;
+}
+
+.project-button #border-button {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+}
+
+.project-button #border-button:hover {
+    border: solid 1px rgba(255, 105, 97, 0);
+}
+
+.proj-icon {
+    margin-right: 0.2rem;
+    font-weight: 100;
+}

@@ -1,0 +1,38 @@
+.footer-caption {
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-family: var(--footer-font);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icon {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    color: gray;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-caption {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0);
+    font-size: 0.9rem;
+    font-family: var(--footer-font);
+    transition: ease 0.3s;
+}
+
+.icon-linkendin:hover .icon-caption,
+.icon-github:hover .icon-caption,
+.icon-resume:hover .icon-caption {
+    color: var(--orange);
+}

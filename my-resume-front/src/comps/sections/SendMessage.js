@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { useState, useRef } from 'react';
+import '../../style/SectionContent.css'
+import '../../style/Sections.css'
 
 const SendMessage = () => {
     const message = useRef();
@@ -40,18 +42,24 @@ const SendMessage = () => {
 
     return (
         <div className='message-box'>
-            <form onSubmit={handleMessageSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" ref={name} required />< br />
-
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="eamil" ref={email} required />< br />
-
-                <textarea
-                    ref={message}
-                    placeholder="Your Message"
-                    rows={4} cols={30} required />< br />
-                <button type='submit'> Send Message </button>
+            <p>Leave A Message:</p>
+            <form id='message-form' onSubmit={handleMessageSubmit}>
+                <div className='row'>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" id="name" ref={name} required />
+                </div>
+                <div className='row'>
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" id="eamil" ref={email} required />
+                </div>
+                <div className='row'>
+                    <textarea
+                        ref={message}
+                        placeholder="Your Message"
+                        rows={8} cols={30} required />
+                </div>
+                <button type='submit' id='border-button'>Send Message</button>
+                <button type='submit' className="button-shadow" id='send-message-button'></button>
             </form>
 
             {sucsess &&
