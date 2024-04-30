@@ -36,7 +36,7 @@ const Pegasus = () => {
                             <p className="nav-button-caption">Prev Project</p>
                         </div>
                         <div className="nav-button">
-                            <button onClick={() => { handleNavigation('/'); }}><IoHome /></button>
+                            <button onClick={() => { handleNavigation('/MyResume'); }}><IoHome /></button>
                             <p className="nav-button-caption">Home</p>
                         </div>
                         <div className="nav-button">
