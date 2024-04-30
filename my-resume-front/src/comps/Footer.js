@@ -6,7 +6,7 @@ import '../style/Footer.css';
 const Footer = () => {
 
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="icons">
                 <div className='icon-linkendin'>
                     <p className='icon-caption' id='icon-caption-linkendin'>Linkedin </p>
@@ -26,7 +26,7 @@ const Footer = () => {
             <div className='footer-caption'>
                 <p>&copy;2024 Mir Shukhman </p>
             </div>
-        </div >
+        </footer >
     )
 }
 

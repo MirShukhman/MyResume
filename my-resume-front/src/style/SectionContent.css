@@ -202,7 +202,7 @@
 
 #border-button:hover {
     transform: translate(12.5px, 14.5px);
-    /* Move 5px right and 5px down on hover */
+    /* Move right and down on hover */
     border: solid var(--pink) 1px;
 }
 
@@ -241,6 +241,7 @@
     text-align: left;
     border-bottom: dashed var(--yellow);
     margin-bottom: 1rem;
+    margin-left: 1rem;
     transition: ease 0.3s;
 }
 
@@ -283,15 +284,39 @@
     font-style: italic;
 }
 
+.job-descript {
+    text-wrap: wrap;
+    max-width: 390px;
+}
+
+.volunteering {
+    font-family: var(--section-header-font);
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-top: 0;
+    max-width: 390px;
+}
+
 /* Projects */
 .projects {
     margin-top: 1rem;
 }
 
 .project {
-    border-bottom: dashed var(--red);
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+
+#eventhub-project {
+    border-bottom: solid 3px rgb(219, 162, 148);
+}
+
+#pegasus-project {
+    border-bottom: solid 3px rgb(121, 179, 197);
+}
+
+#smishing-project {
+    border-bottom: solid 3px rgb(238, 217, 32);
 }
 
 .screenshot {
@@ -317,6 +342,18 @@
     font-style: normal;
     color: white;
     background-color: rgb(219, 162, 148);
+}
+
+#pegasus {
+    background-color: rgb(121, 179, 197);
+    color: white;
+    padding-top: 0;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 2px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 .proj-bottom {
@@ -372,4 +409,77 @@
 .proj-icon {
     margin-right: 0.2rem;
     font-weight: 100;
+}
+
+#pegasus-screenshot {
+    background-image: url(./images/pegasus.jpg);
+    background-size: cover;
+}
+
+#pegasus-buttons #read-more-button {
+    background-color: rgba(121, 179, 197, 0.3);
+}
+
+#pegasus-buttons #code-button {
+    background-color: rgba(121, 179, 197, 0.5);
+}
+
+#pegasus-buttons #live-button {
+    background-color: rgba(121, 179, 197, 0.7);
+}
+
+#smishing {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Roboto Slab", serif;
+    background-color: rgb(136, 174, 227, 0.7);
+    color: rgb(22, 50, 88);
+    text-shadow: 1px 1px 2px rgb(238, 217, 32);
+}
+
+#smishing-bottom-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Roboto Slab", serif;
+    background-color: rgb(136, 174, 227, 0.7);
+    color: rgb(22, 50, 88);
+    text-shadow: 1px 1px 2px rgb(238, 217, 32);
+    padding-bottom: 0.5rem;
+}
+
+#smishing-buttons #read-more-button {
+    background-color: rgb(238, 217, 32, 0.3);
+}
+
+#smishing-buttons #code-button {
+    background-color: rgb(238, 217, 32, 0.5);
+}
+
+#smishing-buttons #live-button {
+    background-color: rgb(238, 217, 32, 0.7);
+}
+
+#smishing-screenshot {
+    background-image: url(./images/how.jpg);
+    background-size: cover;
+}
+
+.description {
+    margin-right: 1rem;
+    font-family: var(--footer-font);
+    font-size: 1rem;
+}
+
+/* education */
+.education {
+    margin-top: 2rem;
+}
+
+#education-icon {
+    color: var(--green);
+}
+
+#school {
+    border-bottom: dashed var(--green);
 }

@@ -1,7 +1,11 @@
+.footer {
+    background-color: transparent;
+}
+
 .footer-caption {
     color: gray;
     font-size: 0.9rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: var(--footer-font);
 }
 
@@ -24,7 +28,8 @@
 }
 
 .icon-caption {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     color: rgba(255, 255, 255, 0);
     font-size: 0.9rem;
     font-family: var(--footer-font);

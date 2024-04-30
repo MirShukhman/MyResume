@@ -1,0 +1,368 @@
+/*Eventhub*/
+.project-page {
+    width: 99vw;
+    background-color: #e6f3ff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-sizing: border-box;
+}
+
+.project-page-inner {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background-color: white;
+    width: 80vw;
+    margin-left: 10%;
+    border: solid gray 2px;
+    text-align: left;
+}
+
+.proj-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.proj-top h1 {
+    margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#eventhub-project-title h1 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(219, 162, 148);
+    font-size: 4rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-button:hover button,
+.nav-button:hover .nav-button-caption {
+    color: rgba(255, 105, 97, 0.9);
+}
+
+.nav-button button {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 105, 97, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-button-caption {
+    margin-top: 0rem;
+    font-family: var(--footer-font);
+    text-wrap: wrap;
+    color: transparent;
+    transition: 0.3s;
+}
+
+.project-page-inner h2 {
+    margin-bottom: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-family: var(--footer-font);
+    font-weight: 600;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.tech-stack .skill {
+    margin-right: 1rem;
+}
+
+.tech-stack .skill p {
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
+
+.project-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+.project-expl {
+    font-size: 1rem;
+    font-family: var(--footer-font);
+    width: 60%;
+    margin-top: 0;
+}
+
+.project-expl table {
+    text-align: center;
+    width: 90%;
+    border-collapse: collapse;
+    font-family: var(--footer-font);
+}
+
+.project-expl thead {
+    background-color: rgba(255, 105, 97, 0.1);
+}
+
+.project-expl th {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.project-expl td {
+    border-top: solid 1px rgba(255, 105, 97, 0.5);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#border-eventhub {
+    border-left: solid 1px rgba(255, 105, 97, 0.5);
+    border-right: solid 1px rgba(255, 105, 97, 0.5);
+}
+
+.proj-scrnshot {
+    width: 400px;
+    height: 170px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+.project-screenshots-eventhub #scrnshot1 {
+    background-image: url(./images/prj-screenshots/eventhub1.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-eventhub #scrnshot2 {
+    background-image: url(./images/prj-screenshots/eventhub2.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-eventhub #scrnshot3 {
+    background-image: url(./images/prj-screenshots/eventhub3.jpg);
+    background-size: cover;
+}
+
+#proj-page-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.proj-button-shadow {
+    border: none;
+    position: absolute;
+    z-index: 0;
+    margin-top: 0.5rem;
+    width: 106px !important;
+    height: 2.5rem !important;
+    margin-left: 0.73rem !important;
+    transition: 0.2s;
+}
+
+#code-button-eventhub {
+    background-color: rgba(255, 105, 97, 0.3);
+}
+
+#live-button-eventhub {
+    background-color: rgba(255, 105, 97, 0.5);
+    width: 95px !important;
+}
+
+#proj-border-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: absolute;
+    border: solid 1px black;
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--footer-font);
+}
+
+.proj-icon {
+    margin-right: 0.4rem;
+}
+
+#proj-border-button:hover {
+    transform: translate(12.5px, 11px);
+    /* Move right and down on hover */
+    border: solid transparent 1px;
+}
+
+#proj-border-button:active {
+    border: solid 1 px transparent;
+    color: white;
+}
+
+#proj-border-button:active+.proj-button-shadow {
+    background-color: rgba(255, 105, 97, 1);
+}
+
+/*Smishing*/
+
+#nav-buttons-smishing .nav-button:hover button,
+#nav-buttons-smishing .nav-button:hover .nav-button-caption {
+    color: rgb(249, 204, 96, 0.9);
+}
+
+#nav-buttons-smishing .nav-button button {
+    color: rgb(249, 204, 96, 0.6);
+}
+
+#smishing-project-title h1 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(22, 50, 88, 0.9);
+    text-shadow: 1px 1px 2px rgb(238, 217, 32);
+    font-size: 3.5rem;
+}
+
+#smishing-project-title h2 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(22, 50, 88, 0.9);
+    text-shadow: 1px 1px 2px rgb(238, 217, 32);
+    font-size: 2rem;
+}
+
+.proj-top h2 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.project-screenshots-smishing #scrnshot1 {
+    background-image: url(./images/prj-screenshots/smishing1.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-smishing #scrnshot2 {
+    background-image: url(./images/prj-screenshots/smishing2.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-smishing #scrnshot3 {
+    background-image: url(./images/prj-screenshots/smishing3.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-smishing {
+    margin-bottom: 2rem;
+}
+
+#code-button-smishing {
+    background-color: rgb(249, 204, 96, 0.6);
+}
+
+#live-button-smishing {
+    background-color: rgb(249, 204, 96, 0.9);
+    width: 95px !important;
+}
+
+#proj-border-button:active+#code-button-smishing,
+#proj-border-button:active+#live-button-smishing {
+    background-color: rgb(249, 204, 96, 1);
+}
+
+/*Pegasus*/
+#nav-buttons-pegasus .nav-button:hover button,
+#nav-buttons-pegasus .nav-button:hover .nav-button-caption {
+    color: rgba(121, 179, 197, 0.9);
+}
+
+#nav-buttons-pegasus .nav-button button {
+    color: rgba(121, 179, 197, 0.5);
+}
+
+#pegasus-project-title h1 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(121, 179, 197);
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+
+.proj-top h2 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.project-screenshots-pegasus #scrnshot1 {
+    background-image: url(./images/prj-screenshots/pegasus1.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-pegasus #scrnshot2 {
+    background-image: url(./images/prj-screenshots/pegasus2.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-pegasus #scrnshot3 {
+    background-image: url(./images/prj-screenshots/pegasus3.jpg);
+    background-size: cover;
+}
+
+.project-screenshots-pegasus {
+    margin-bottom: 2rem;
+}
+
+#code-button-pegasus {
+    background-color: rgba(121, 179, 197, 0.3);
+}
+
+#live-button-pegasus {
+    background-color: rgba(121, 179, 197, 0.6);
+    width: 95px !important;
+}
+
+#proj-border-button:active+#code-button-pegasus,
+#proj-border-button:active+#live-button-pegasus {
+    background-color: rgba(121, 179, 197, 0.9);
+}
+
+#project-expl-pegasus thead {
+    background-color: rgba(121, 179, 197, 0.2);
+}
+
+#project-expl-pegasus td {
+    border-top: solid 1px rgb(121, 179, 197);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#border-pegasus {
+    border-left: solid 1px rgb(121, 179, 197);
+    border-right: solid 1px rgb(121, 179, 197);
+}
