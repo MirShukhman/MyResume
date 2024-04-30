@@ -24,7 +24,7 @@ const Projects = () => {
                         and upload images from the event.</div>
 
                     <div className="buttons">
-                        <div className="project-button" onClick={() => { handleNavigation('/project-eventhub'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-eventhub'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>
@@ -49,7 +49,7 @@ const Projects = () => {
                         to post upcoming flights, and for Customers to search for flights & purchase tickets.</div>
 
                     <div className="buttons" id='pegasus-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/project-pegasus'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>
@@ -76,7 +76,7 @@ const Projects = () => {
                         presentation purposes.</div>
 
                     <div className="buttons" id='smishing-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/project-smishing'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-smishing'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>
