@@ -33,7 +33,7 @@ const EventHub = () => {
 
                     <div className="nav-buttons" id='nav-buttons-eventhub'>
                         <div className="nav-button">
-                            <button onClick={() => { handleNavigation('/project-smishing'); }}><IoArrowBackCircle /></button>
+                            <button onClick={() => { handleNavigation('/MyResume/project-smishing'); }}><IoArrowBackCircle /></button>
                             <p className="nav-button-caption">Prev Project</p>
                         </div>
                         <div className="nav-button">
@@ -41,7 +41,7 @@ const EventHub = () => {
                             <p className="nav-button-caption">Home</p>
                         </div>
                         <div className="nav-button">
-                            <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
+                            <button onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
                             <p className="nav-button-caption">Next Project</p>
                         </div>
                     </div>
