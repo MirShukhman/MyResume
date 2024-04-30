@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MyResume/static/css/main.0e3c2ab9.css",
+    "main.js": "/MyResume/static/js/main.bb12715b.js",
+    "static/media/pegasus3.jpg": "/MyResume/static/media/pegasus3.a3c1a6e3b978dc98c834.jpg",
+    "static/media/eventhub2.jpg": "/MyResume/static/media/eventhub2.97c6c586e9ade704f7cb.jpg",
+    "static/media/pegasus.jpg": "/MyResume/static/media/pegasus.87af445732073fdee855.jpg",
+    "static/media/pegasus1.jpg": "/MyResume/static/media/pegasus1.87af445732073fdee855.jpg",
+    "static/media/eventhub.jpg": "/MyResume/static/media/eventhub.94d97b3ec426b88ee908.jpg",
+    "static/media/eventhub1.jpg": "/MyResume/static/media/eventhub1.94d97b3ec426b88ee908.jpg",
+    "static/media/pegasus2.jpg": "/MyResume/static/media/pegasus2.2d8ef12c25d0d055b55f.jpg",
+    "static/media/how.jpg": "/MyResume/static/media/how.337dbeab6532ed5a63eb.jpg",
+    "static/media/smishing2.jpg": "/MyResume/static/media/smishing2.337dbeab6532ed5a63eb.jpg",
+    "static/media/eventhub3.jpg": "/MyResume/static/media/eventhub3.8dec9d985606be4135c3.jpg",
+    "static/media/smishing3.jpg": "/MyResume/static/media/smishing3.7c5879700dc4bcfcad85.jpg",
+    "static/media/smishing1.jpg": "/MyResume/static/media/smishing1.1024f42b6b5e132a4a95.jpg",
+    "index.html": "/MyResume/index.html",
+    "main.0e3c2ab9.css.map": "/MyResume/static/css/main.0e3c2ab9.css.map",
+    "main.bb12715b.js.map": "/MyResume/static/js/main.bb12715b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e3c2ab9.css",
+    "static/js/main.bb12715b.js"
+  ]
+}
