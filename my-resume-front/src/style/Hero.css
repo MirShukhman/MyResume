@@ -70,17 +70,19 @@
     }
 
     .hero p {
-        text-align: left;
+        text-align: center;
         width: 100vw;
         padding-right: 0 !important;
-        padding-left: 3.5rem;
     }
 
     #hero-top {
         margin-top: 2rem !important;
+        font-size: 2rem;
     }
 
     #hero-main {
         margin-bottom: 1rem !important;
+        font-size: 1.5rem;
+        text-align: center !important;
     }
 }
