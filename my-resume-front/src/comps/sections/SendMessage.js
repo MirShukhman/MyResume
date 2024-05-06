@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useRef } from 'react';
+import PopUp from './PopUp';
 import '../../style/SectionContent.css'
 import '../../style/Sections.css'
 
@@ -7,12 +8,12 @@ const SendMessage = () => {
     const message = useRef();
     const name = useRef();
     const email = useRef();
-    const [sucsess, setSucsess] = useState(false)
+    const [popUp, setPopUp] = useState(false)
 
     const handleMessageSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://127.0.0.1:5000/send_message`, {
+            const response = await axios.post(`http://52.191.230.188:5000/send_message`, {
                 message: message.current.value,
                 sender_email: email.current.value,
                 sender_name: name.current.value
@@ -31,7 +32,7 @@ const SendMessage = () => {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
             } else {
-                setSucsess(true)
+                openPopUp()
                 e.target.reset();
             }
         } catch (error) {
@@ -39,6 +40,14 @@ const SendMessage = () => {
         }
 
     };
+
+    function openPopUp() {
+        setPopUp(true)
+    }
+
+    function closePopUp() {
+        setPopUp(false)
+    }
 
     return (
         <div className='message-box'>
@@ -62,10 +71,9 @@ const SendMessage = () => {
                 <button type='submit' className="button-shadow" id='send-message-button'></button>
             </form>
 
-            {sucsess &&
+            {popUp &&
                 <div className='sucsess-msg'>
-                    <p>Your message has been sent</p>
-                    <p>Thank you for reaching out!</p>
+                    <PopUp onClose={closePopUp} />
                 </div>}
         </div>
     )

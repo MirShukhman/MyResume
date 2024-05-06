@@ -28,8 +28,8 @@ def send_message():
     message_body = f"New Message from:{sender_name}\n\n{message}\n\nSender's Email:{sender_email}\n\nHave A Great Day!"
     msg.body = message_body
     mail.send(msg)
-    
+
     return jsonify({'message': 'Message sent successfully'}), 201
     
 if __name__ == '__main__':  
-    app.run()
+    app.run(debug=False, port=5000, host='0.0.0.0')
