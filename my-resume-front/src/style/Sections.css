@@ -29,6 +29,7 @@
     /* Mobile-specific styles */
     .section-comp {
         margin-bottom: 3%;
+        align-self: center !important;
     }
 
     .section-header {
@@ -107,7 +108,7 @@
     background-color: var(--blue);
 }
 
-#Socials {
+#Links {
     background-color: var(--purple);
 }
 

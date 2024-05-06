@@ -1,0 +1,121 @@
+.window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.image-window-inner {
+    box-sizing: border-box;
+    position: relative;
+    width: 90vw;
+    height: 80vh;
+    box-shadow: rgba(14, 30, 37, 0.20) 0px 2px 4px 0px, rgba(14, 30, 37, 0.42) 0px 2px 16px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.image-window-inner::before,
+.image-window-inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+}
+
+.image-window-inner::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+}
+
+.image-window-inner::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+}
+
+.close,
+.prev-img,
+.next-img {
+    color: white;
+    font-size: 3rem;
+    transition: 0.2s ease-in;
+    cursor: pointer !important;
+}
+
+.close {
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 70vh;
+    margin-right: 1rem;
+    position: absolute;
+    z-index: 10;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 10;
+    width: 90vw;
+}
+
+.close:hover,
+.prev-img:hover,
+.next-img:hover {
+    transform: scale(1.2);
+}
+
+#eventhub1 {
+    background-image: url(./images/prj-screenshots/eventhub1.jpg);
+    background-size: cover;
+}
+
+#eventhub2 {
+    background-image: url(./images/prj-screenshots/eventhub2.jpg);
+    background-size: cover;
+}
+
+#eventhub3 {
+    background-image: url(./images/prj-screenshots/eventhub3.jpg);
+    background-size: cover;
+}
+
+#pegasus1 {
+    background-image: url(./images/prj-screenshots/pegasus1.jpg);
+    background-size: cover;
+}
+
+#pegasus2 {
+    background-image: url(./images/prj-screenshots/pegasus2.jpg);
+    background-size: cover;
+}
+
+#pegasus3 {
+    background-image: url(./images/prj-screenshots/pegasus3.jpg);
+    background-size: cover;
+}
+
+#smishing1 {
+    background-image: url(./images/prj-screenshots/smishing1.jpg);
+    background-size: cover;
+}
+
+#smishing2 {
+    background-image: url(./images/prj-screenshots/smishing2.jpg);
+    background-size: cover;
+}
+
+#smishing3 {
+    background-image: url(./images/prj-screenshots/smishing3.jpg);
+    background-size: cover;
+}

@@ -1,6 +1,6 @@
 
 import './style/App.css';
-import './style/Hero.css';
+import Header from './comps/Header';
 import ButtonComp from './comps/ButtonComp';
 import Footer from './comps/Footer';
 import EventHub from './pages/EventHub';
@@ -15,14 +15,7 @@ function App() {
       <Routes>
         <Route path='/MyResume' element={
           <>
-            <div className='hero'>
-              <p id='hero-top'>Hi, I am Mir</p>
-              <p id='hero-main'>
-                I am a Full Stack Developer, with a passion of making user-friendly and approachable apps, that just make life a little easier.
-                My passion in programming is the back-end, but I love building a colorful and inviting interface.
-                In non-programing aspects I am a paramedic, pet mom, and hate being bored.
-                I can also make ugly but very tasty cakes. </p>
-            </div>
+            <Header />
 
             {/* Conditional rendering for mobile and PC */}
             {window.innerWidth < 768 ? (
@@ -32,7 +25,7 @@ function App() {
                 <ButtonComp title={'Experience'} />
                 <ButtonComp title={'Education'} />
                 <ButtonComp title={'About Me'} />
-                <ButtonComp title={'Socials'} />
+                <ButtonComp title={'Links'} />
                 <ButtonComp title={'Get In Touch'} />
               </div>
             ) : (
@@ -45,7 +38,7 @@ function App() {
                 </div>
                 <div className='column'>
                   <ButtonComp title={'About Me'} />
-                  <ButtonComp title={'Socials'} />
+                  <ButtonComp title={'Links'} />
                   <ButtonComp title={'Get In Touch'} />
                 </div>
               </div>

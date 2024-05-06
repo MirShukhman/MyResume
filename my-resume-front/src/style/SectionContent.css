@@ -39,6 +39,11 @@
     .socials {
         margin-left: 4rem;
     }
+
+    #open,
+    #closed {
+        max-width: 300px;
+    }
 }
 
 .socials .row {
@@ -203,13 +208,16 @@
 #border-button:hover {
     transform: translate(12.5px, 14.5px);
     /* Move right and down on hover */
-    border: solid var(--pink) 1px;
+    border: solid transparent 1px;
 }
 
 #border-button:active {
-    background-color: rgba(207, 119, 169, 0.8);
-    border: solid rgba(207, 119, 169, 0.8) 1px;
+    border: solid transparent 1px;
     color: white;
+}
+
+#border-button:active+#send-message-button {
+    background-color: rgba(207, 119, 169, 0.8);
 }
 
 .button-shadow {
@@ -334,6 +342,7 @@
     letter-spacing: 1px;
     font-weight: 500;
     margin-top: 0;
+    cursor: pointer !important;
 }
 
 #eventhub {
@@ -372,7 +381,7 @@
 
 #read-more-button {
     background-color: rgba(255, 105, 97, 0.3);
-    width: 115px;
+    width: 105px;
     height: 2.5rem;
     margin-left: 0.8rem;
 }
@@ -431,6 +440,7 @@
 #smishing {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 1.3rem;
     font-family: "Roboto Slab", serif;
     background-color: rgb(136, 174, 227, 0.7);
     color: rgb(22, 50, 88);
@@ -482,4 +492,12 @@
 
 #school {
     border-bottom: dashed var(--green);
+}
+
+/*about*/
+.about {
+    font-family: var(--footer-font);
+    text-align: left;
+    margin-top: 2rem;
+    max-width: 380px;
 }

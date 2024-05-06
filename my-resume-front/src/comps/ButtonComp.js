@@ -17,7 +17,7 @@ const ButtonComp = (props) => {
         'Experience': <Experience />,
         'Education': <Education />,
         'About Me': <About />,
-        'Socials': <Socials />,
+        'Links': <Socials />,
         'Get In Touch': <Contact />
     }
     const { title } = props

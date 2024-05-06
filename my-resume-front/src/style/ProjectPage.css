@@ -1,9 +1,10 @@
 /*Eventhub*/
 .project-page {
     width: 99vw;
-    background-color: #e6f3ff;
+    background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .project-page-inner {
@@ -12,7 +13,8 @@
     background-color: white;
     width: 80vw;
     margin-left: 10%;
-    border: solid gray 2px;
+    border: solid gray 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     text-align: left;
 }
 
@@ -149,6 +151,7 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     margin-bottom: 1rem;
     margin-left: 3rem;
+    cursor: pointer !important;
 }
 
 .project-screenshots-eventhub #scrnshot1 {
