@@ -29,9 +29,7 @@ const Header = () => {
                         )}
                 </div>
 
-                <div>
-                    <div className='hero-img'></div>
-                </div>
+
             </div>
 
         </div>
