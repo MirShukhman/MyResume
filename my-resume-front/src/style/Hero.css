@@ -19,16 +19,6 @@
     justify-content: center;
 }
 
-.hero-img {
-    background-image: url('../style/images/profile.png');
-    background-size: cover;
-    width: 230px;
-    height: 300px;
-    border-radius: 200px;
-    border-bottom: solid 3px rgba(165, 97, 42, 0.699);
-    margin-bottom: 2rem;
-}
-
 .hero p {
     text-align: left;
     padding-right: 3rem;
@@ -63,10 +53,6 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-    }
-
-    .hero-img {
-        margin-bottom: 0 !important;
     }
 
     .hero p {

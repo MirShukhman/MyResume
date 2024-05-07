@@ -6,6 +6,16 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Socials = () => {
 
+    const downloadPDF = () => {
+        const pdfPath = '/Resume_Download_Mir_Shukhman.pdf';
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = 'Resume_Mir_Shukhman.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <div className='socials'>
             <div className="row"
@@ -18,7 +28,7 @@ const Socials = () => {
                 <FaGithub className='socials-icon' />
                 <p>GitHub </p>
             </div>
-            <div className="row">
+            <div className="row" onClick={downloadPDF}>
                 <FaFileDownload className='socials-icon' />
                 <p>Download CV</p>
             </div>

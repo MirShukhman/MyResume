@@ -5,6 +5,16 @@ import '../style/Footer.css';
 
 const Footer = () => {
 
+    const downloadPDF = () => {
+        const pdfPath = '/Resume_Download_Mir_Shukhman.pdf';
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = 'Resume_Mir_Shukhman.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <footer className="footer">
             <div className="icons">
@@ -18,7 +28,7 @@ const Footer = () => {
                     <FaGithub className="footer-icon" id='footer-icon-resume'
                         onClick={() => window.open('https://github.com/MirShukhman', '_blank')} />
                 </div>
-                <div className='icon-resume'>
+                <div className='icon-resume' onClick={downloadPDF}>
                     <p className='icon-caption' id='icon-caption-resume'>Download CV</p>
                     <MdEditDocument className="footer-icon" id='footer-icon-resume' />
                 </div>
