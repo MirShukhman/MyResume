@@ -91,7 +91,7 @@ const SmishingMobile = () => {
                                 <button className="proj-button-shadow" id='code-button-smishing'></button>
                             </div>
                             <div className="project-button" >
-                                <button id='proj-border-button'><TbWorld className='proj-icon' /> Live</button>
+                                <button id='proj-border-button' onClick={() => window.open('https://mirshukhman.github.io/Smishing-Buster/', '_blank')}><TbWorld className='proj-icon' /> Live</button>
                                 <button className="proj-button-shadow" id='live-button-smishing'></button>
                             </div>
                         </div>

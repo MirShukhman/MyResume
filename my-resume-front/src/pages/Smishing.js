@@ -51,15 +51,15 @@ const Smishing = () => {
 
                             <div className="nav-buttons" id='nav-buttons-smishing'>
                                 <div className="nav-button">
-                                    <button onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}><IoArrowBackCircle /></button>
+                                    <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowBackCircle /></button>
                                     <p className="nav-button-caption">Prev Project</p>
                                 </div>
                                 <div className="nav-button">
-                                    <button onClick={() => { handleNavigation('/MyResume'); }}><IoHome /></button>
+                                    <button onClick={() => { handleNavigation('/'); }}><IoHome /></button>
                                     <p className="nav-button-caption">Home</p>
                                 </div>
                                 <div className="nav-button">
-                                    <button onClick={() => { handleNavigation('/MyResume/project-eventhub'); }}><IoArrowForwardCircleSharp /></button>
+                                    <button onClick={() => { handleNavigation('/project-eventhub'); }}><IoArrowForwardCircleSharp /></button>
                                     <p className="nav-button-caption">Next Project</p>
                                 </div>
                             </div>

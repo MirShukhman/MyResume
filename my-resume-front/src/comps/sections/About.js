@@ -13,7 +13,7 @@ const About = () => {
             </p>
             <p>
                 In non-programing aspects I am a paramedic, pet mom, and hate being bored.
-                I can also make ugly but very tasty cakes, knit and pencil draw.
+                Also, I can make ugly but very tasty cakes.
             </p>
         </div>
     )

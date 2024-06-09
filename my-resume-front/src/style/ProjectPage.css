@@ -7,6 +7,12 @@
     position: relative;
 }
 
+.not-depoyed {
+    color: red;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
 .project-page-inner {
     margin-top: 3rem;
     margin-bottom: 5rem;

@@ -17,7 +17,7 @@ const Projects = () => {
 
             <div className="project" id='eventhub-project'>
 
-                <p className="title" id='eventhub' onClick={() => { handleNavigation('/MyResume/project-eventhub'); }}>
+                <p className="title" id='eventhub' onClick={() => { handleNavigation('/project-eventhub'); }}>
                     EventHub</p>
                 <div className='proj-bottom'>
                     <div className="description">EventHub is a platform that allowes registered users to
@@ -25,7 +25,7 @@ const Projects = () => {
                         and upload images from the event.</div>
 
                     <div className="buttons" id='eventhub-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-eventhub'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/project-eventhub'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>
@@ -33,10 +33,11 @@ const Projects = () => {
                             <button id='border-button'> <FaCode className='proj-icon' /> Code</button>
                             <button className="button-shadow" id='code-button'></button>
                         </div>
-                        <div className="project-button" onClick={() => window.open('https://tinyurl.com/eventhubmirshukhman', '_blank')} >
+                        {/* <div className="project-button" onClick={() => window.open('http://52.154.67.55', '_blank')} >
                             <button id='border-button'><TbWorld className='proj-icon' /> Live</button>
                             <button className="button-shadow" id='live-button'></button>
-                        </div>
+                        </div> */
+                        }
                     </div>
 
                 </div>
@@ -44,14 +45,14 @@ const Projects = () => {
 
             <div className="project" id='pegasus-project'>
 
-                <p className="title" id='pegasus' onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}>
+                <p className="title" id='pegasus' onClick={() => { handleNavigation('/project-pegasus'); }}>
                     Pegasus</p>
                 <div className='proj-bottom'>
                     <div className="description">Pegasus is an online platform that allowes Airlines
                         to post upcoming flights, and for Customers to search for flights & purchase tickets.</div>
 
                     <div className="buttons" id='pegasus-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/project-pegasus'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>
@@ -59,10 +60,11 @@ const Projects = () => {
                             <button id='border-button'> <FaCode className='proj-icon' /> Code</button>
                             <button className="button-shadow" id='code-button'></button>
                         </div>
-                        <div className="project-button" onClick={() => window.open('https://tinyurl.com/pegasusmirshukhman', '_blank')}>
+                        {/* <div className="project-button" onClick={() => window.open('http://tinyurl.com/pegasusmirshukhman', '_blank')}>
                             <button id='border-button'><TbWorld className='proj-icon' /> Live</button>
                             <button className="button-shadow" id='live-button'></button>
-                        </div>
+                        </div> */
+                        }
                     </div>
 
                 </div>
@@ -70,7 +72,7 @@ const Projects = () => {
 
             <div className="project" id='smishing-project'>
 
-                <p className="title" id='smishing' onClick={() => { handleNavigation('/MyResume/project-smishing'); }}>
+                <p className="title" id='smishing' onClick={() => { handleNavigation('/project-smishing'); }}>
                     Smishing Buster</p>
                 <p className="title" id='smishing-bottom-title'
                     onClick={() => { handleNavigation('/MyResume/project-smishing'); }}>
@@ -81,7 +83,7 @@ const Projects = () => {
                         presentation purposes.</div>
 
                     <div className="buttons" id='smishing-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/MyResume/project-smishing'); }}>
+                        <div className="project-button" onClick={() => { handleNavigation('/project-smishing'); }}>
                             <button id='border-button'>Read More</button>
                             <button className="button-shadow" id='read-more-button'></button>
                         </div>

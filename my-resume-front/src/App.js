@@ -13,7 +13,7 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route path='/MyResume' element={
+        <Route exact path='/' element={
           <>
             <Header />
 
@@ -46,9 +46,9 @@ function App() {
 
           </>} />
 
-        <Route path='/MyResume/project-eventhub' element={<EventHub />} />
-        <Route path='/MyResume/project-pegasus' element={<Pegasus />} />
-        <Route path='/MyResume/project-smishing' element={<Smishing />} />
+        <Route path='/project-eventhub' element={<EventHub />} />
+        <Route path='/project-pegasus' element={<Pegasus />} />
+        <Route path='/project-smishing' element={<Smishing />} />
 
       </Routes>
 

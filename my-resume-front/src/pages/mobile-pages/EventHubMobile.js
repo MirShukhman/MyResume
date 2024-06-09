@@ -169,15 +169,20 @@ const EventHubMobile = () => {
                             </tbody>
                         </table>
 
+                        <p className="not-depoyed">The Project is currently off the coud due to cost management.</p>
+                        <p className="not-depoyed">If you would like to check out the project Live, please reach out via channels on Main Page.</p>
+
                         <div className="project-buttons" id='proj-page-buttons'>
                             <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/Project-3-Event-Hub', '_blank')}>
                                 <button id='proj-border-button'> <FaCode className='proj-icon' /> Code</button>
                                 <button className="proj-button-shadow" id='code-button-eventhub'></button>
                             </div>
-                            <div className="project-button" >
-                                <button id='proj-border-button'><TbWorld className='proj-icon' /> Live</button>
+
+                            {/* <div className="project-button" >
+                                <button id='proj-border-button' onClick={() => window.open('http://52.154.67.55', '_blank')}><TbWorld className='proj-icon' /> Live</button>
                                 <button className="proj-button-shadow" id='live-button-eventhub'></button>
-                            </div>
+                            </div> */
+                            }
                         </div>
 
                     </p>

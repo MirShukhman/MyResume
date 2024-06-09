@@ -56,15 +56,15 @@ const EventHub = () => {
 
                                     <div className="nav-buttons" id='nav-buttons-eventhub'>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/MyResume/project-smishing'); }}><IoArrowBackCircle /></button>
+                                            <button onClick={() => { handleNavigation('/project-smishing'); }}><IoArrowBackCircle /></button>
                                             <p className="nav-button-caption">Prev Project</p>
                                         </div>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/MyResume'); }}><IoHome /></button>
+                                            <button onClick={() => { handleNavigation('/'); }}><IoHome /></button>
                                             <p className="nav-button-caption">Home</p>
                                         </div>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
+                                            <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
                                             <p className="nav-button-caption">Next Project</p>
                                         </div>
                                     </div>
@@ -178,15 +178,19 @@ const EventHub = () => {
                                             </tbody>
                                         </table>
 
+                                        <p className="not-depoyed">The Project is currently off the coud due to cost management.</p>
+                                        <p className="not-depoyed">If you would like to check out the project Live, please reach out via channels on Main Page.</p>
+
                                         <div className="project-buttons" id='proj-page-buttons'>
                                             <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/Project-3-Event-Hub', '_blank')}>
                                                 <button id='proj-border-button'> <FaCode className='proj-icon' /> Code</button>
                                                 <button className="proj-button-shadow" id='code-button-eventhub'></button>
                                             </div>
-                                            <div className="project-button" onClick={() => window.open('https://tinyurl.com/eventhubmirshukhman', '_blank')}>
+                                            {/* <div className="project-button" onClick={() => window.open('http://52.154.67.55', '_blank')}>
                                                 <button id='proj-border-button'><TbWorld className='proj-icon' /> Live</button>
                                                 <button className="proj-button-shadow" id='live-button-eventhub'></button>
-                                            </div>
+                                            </div> */
+                                            }
                                         </div>
 
                                     </p>
