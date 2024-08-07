@@ -3,7 +3,7 @@ COPY requirements.txt /app/requirements.txt
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 5000
+EXPOSE 5001
 # Set environment variables from .env
 ARG ENV_FILE_PATH=./.env
 ENV ENV_FILE_PATH=${ENV_FILE_PATH}

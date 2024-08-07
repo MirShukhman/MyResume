@@ -13,7 +13,7 @@ const SendMessage = () => {
     const handleMessageSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://52.191.230.188:5000/send_message`, {
+            const response = await axios.post(`https://2dc2-2a06-c701-440a-a400-fcf1-a91e-c66f-b27d.ngrok-free.app/send_message`, {
                 message: message.current.value,
                 sender_email: email.current.value,
                 sender_name: name.current.value
