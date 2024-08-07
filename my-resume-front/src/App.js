@@ -13,7 +13,7 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route exact path='/' element={
+        <Route exact path='/MyResume' element={
           <>
             <Header />
 
