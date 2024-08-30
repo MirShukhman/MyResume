@@ -119,3 +119,18 @@
     background-image: url(./images/prj-screenshots/smishing3.jpg);
     background-size: cover;
 }
+
+#equpment1 {
+    background-image: url(./images/prj-screenshots/equpment1.png);
+    background-size: cover;
+}
+
+#equpment2 {
+    background-image: url(./images/prj-screenshots/equpment2.png);
+    background-size: cover;
+}
+
+#equpment3 {
+    background-image: url(./images/prj-screenshots/equpment3.png);
+    background-size: cover;
+}

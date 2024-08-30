@@ -10,8 +10,6 @@ import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiMicrosoftsqlserver } from "react-icons/si";
-import { SiMicrosoftazure } from "react-icons/si";
-import { FaDocker } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
@@ -19,7 +17,7 @@ import OpenImage from "../comps/OpenImage";
 import EventHubMobile from "./mobile-pages/EventHubMobile";
 import Clouds from "../comps/backround/Clouds";
 
-const EventHub = () => {
+const Equpment = () => {
     const navigate = useNavigate();
 
     const handleNavigation = (path) => {
@@ -47,16 +45,16 @@ const EventHub = () => {
 
                             <Clouds height={viewportHeight} />
 
-                            {imageIsOpen && <OpenImage onClose={closeImage} project={'eventhub'} id={imageIsOpen} />}
+                            {imageIsOpen && <OpenImage onClose={closeImage} project={'equpment'} id={imageIsOpen} />}
 
                             <div className="project-page-inner" >
 
                                 <div className="proj-top">
-                                    <div id='eventhub-project-title'><h1 className="project-title">EventHub</h1></div>
+                                    <div id='equpment-project-title'><h1 className="project-title">Equpment Orders Mangment System</h1></div>
 
-                                    <div className="nav-buttons" id='nav-buttons-eventhub'>
+                                    <div className="nav-buttons" id='nav-buttons-equpment'>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/project-equpment'); }}><IoArrowBackCircle /></button>
+                                            <button onClick={() => { handleNavigation('/project-eventhub'); }}><IoArrowBackCircle /></button>
                                             <p className="nav-button-caption">Prev Project</p>
                                         </div>
                                         <div className="nav-button">
@@ -99,51 +97,47 @@ const EventHub = () => {
                                     </div>
                                 </div>
 
-
                                 <div className="project-main">
-                                    <p className="project-expl">
+                                    <p className="project-expl" id="project-expl-equpment">
                                         <p>
-                                            Welcome to EventHub, your go-to online platform for effortlessly organizing and discovering exciting events.
-                                            Whether you're looking to host your own event or join others in memorable experiences, EventHub has you covered.
+                                            Equipment Order Management System built using Django, React, and MySQL. The project was inspired by my desire to practice Django skills and to improve upon the equipment ordering system used at the clinic network where I previously worked. The system is designed to be a web application with a simple and user-friendly interface, primarily in Hebrew.
                                         </p>
-                                        <p>
-                                            For Attendees:
 
-                                            Discover a plethora of events tailored to your interests through our intuitive search function. Filter events by dates, categories,
-                                            and more to find the perfect match.
-                                            After attending an event, share your thoughts and memories by leaving reviews and uploading images, enriching the community experience.
-                                        </p>
-                                        <p>
-                                            For Organizers:
+                                        <h3>Features</h3>
+                                        <h4>Branch Admin Interface:</h4>
+                                        <ul>
+                                            <li>Easy Order Creation: Allows branch admins to create orders with a categorized view of available equipment.</li>
+                                            <li>Order Status Tracking: Track the status of orders from creation to fulfillment.</li>
+                                            <li>Order Confirmation:  Confirm the receipt of equipment at the branch.</li>
+                                            <li>Branch Switching: Easily switch between branches for ordering or tracking purposes.</li>
+                                            <li>Profile Management: Update personal information and change passwords.</li>
+                                        </ul>
+                                        <h4>Global Admin Interface:</h4>
+                                        <ul>
+                                            <li>Management of Branches, Suppliers, and Equipment: View, create, and update branches, suppliers, equipment items, and categories.</li>
+                                            <li>User Management: Create new users (external registration is not available), view users, promote them to admins, or block them from the system.</li>
+                                            <li>Approval System: Flag certain equipment items as "Manager Approval Required." Orders containing these items will need national admin approval before being sent to suppliers.</li>
+                                            <li>Order Monitoring: View orders requiring attention (those not yet sent to suppliers or containing items requiring approval).</li>
+                                            <li>Order Filtering: Filter orders based on various criteria.</li>
+                                            <li>Order Dispatch: Generate Word files for orders by branch and supplier, which can be annotated and sent to suppliers. Future updates plan to send PDF orders directly via email.</li>
+                                        </ul>
 
-                                            Seamlessly create and manage events with our user-friendly interface. Decide whether your event is public or private,
-                                            with the option to approve registrations for private events.
-                                            Keep your attendees informed with updates or cancellations, ensuring a smooth and transparent event experience for all.
-                                        </p>
+                                        <h4>User Authentication:</h4>
                                         <p>
-                                            Personalized Experience:
+                                            The system uses Django's Token Authentication for user identification and stores passwords hashed in the database.
+                                        </p>
 
-                                            Enjoy a personalized dashboard where you can effortlessly keep track of events you've attended, registered for, or organized.
-                                            Easily manage your profile and create new events with just a few clicks.
-                                        </p>
-                                        <p>
-                                            Unlimited Possibilities:
+                                        <h3>Future Plans</h3>
+                                        <ul>
+                                            <li>Mobile Compatibility: Currently, the system is designed for desktop use only. Future updates will include mobile support.</li>
+                                            <li>Direct PDF Dispatch: Automate the process of sending PDF order files directly to supplier email addresses.</li>
+                                            <li>Usage Analytics: Implement periodic consumption average calculations for each branch, region, and national level.</li>
+                                            <li>Client Requests: Any additional features as requested by clients.</li>
+                                        </ul>
 
-                                            At EventHub, any user can wear multiple hats. Be an attendee at one event and an organizer at another – the choice is yours!
-                                            There's no limit to the number
-                                            of events you can participate in or organize, allowing you to fully immerse yourself in our vibrant community.
-                                        </p>
+                                        <h3>Live Demo</h3>
                                         <p>
-                                            Administrative Features:
-
-                                            Access an exclusive Administrator interface with enhanced capabilities. Manage event categories, activate or deactivate users,
-                                            and appoint or revoke administrative roles with ease.
-                                            Administrators enjoy all the functionalities of regular users while overseeing the smooth operation of the platform,
-                                            ensuring a vibrant and secure community.
-                                        </p>
-                                        <p>
-                                            Join EventHub today and unlock a world of endless possibilities, where every event is an opportunity for connection and discovery.
-                                            Start creating and experiencing unforgettable moments, one event at a time.
+                                            The live demo of the system showcases a fictional multi-branch clinic inspired by the original project concept. <span id='live-view-warning'>Please note that the demo is intended for desktop use only at this time.</span> For your convenience, demo user data is available here and on the login page.
                                         </p>
 
                                         <h3>Demo Users To Check Out:</h3>
@@ -155,35 +149,32 @@ const EventHub = () => {
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>User444</td>
-                                                    <td id='border-eventhub'>password4</td>
+                                                    <td>FirstAdmin</td>
+                                                    <td id='border-equpment'>FirstAdminPassword123</td>
                                                     <td>Admin</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>user9</td>
-                                                    <td id='border-eventhub'>password9</td>
+                                                    <td>betty12345</td>
+                                                    <td id='border-equpment'>betty12345</td>
                                                     <td>Regular</td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <p className="not-depoyed">The Project is currently off the coud due to cost management.</p>
-                                        <p className="not-depoyed">If you would like to check out the project Live, please reach out via channels on Main Page.</p>
-
                                         <div className="project-buttons" id='proj-page-buttons'>
-                                            <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/Project-3-Event-Hub', '_blank')}>
+                                            <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/Equpment', '_blank')}>
                                                 <button id='proj-border-button'> <FaCode className='proj-icon' /> Code</button>
-                                                <button className="proj-button-shadow" id='code-button-eventhub'></button>
+                                                <button className="proj-button-shadow" id='code-button-equpment'></button>
                                             </div>
-                                            {/* <div className="project-button" onClick={() => window.open('http://52.154.67.55', '_blank')}>
+                                            <div className="project-button" onClick={() => window.open('http://52.154.67.55', '_blank')}>
                                                 <button id='proj-border-button'><TbWorld className='proj-icon' /> Live</button>
-                                                <button className="proj-button-shadow" id='live-button-eventhub'></button>
-                                            </div> */
-                                            }
+                                                <button className="proj-button-shadow" id='live-button-equpment'></button>
+                                            </div>
+
                                         </div>
 
                                     </p>
-                                    <div className="project-screenshots-eventhub">
+                                    <div className="project-screenshots-equpment">
                                         <div className="proj-scrnshot" id='scrnshot1' onClick={() => openImage('1')}></div>
                                         <div className="proj-scrnshot" id='scrnshot2' onClick={() => openImage('2')}></div>
                                         <div className="proj-scrnshot" id='scrnshot3' onClick={() => openImage('3')}></div>
@@ -198,4 +189,4 @@ const EventHub = () => {
     )
 }
 
-export default EventHub
+export default Equpment
