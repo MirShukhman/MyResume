@@ -35,15 +35,15 @@ const EventHubMobile = () => {
 
                 <div className="nav-buttons-mobile" id='nav-buttons-eventhub'>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume/project-smishing'); }}><IoArrowBackCircle /></button>
+                        <button onClick={() => { handleNavigation('/project-equpment'); }}><IoArrowBackCircle /></button>
                         <p className="nav-button-caption">Prev Project</p>
                     </div>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume'); }}><IoHome /></button>
+                        <button onClick={() => { handleNavigation('/'); }}><IoHome /></button>
                         <p className="nav-button-caption">Home</p>
                     </div>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
+                        <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
                         <p className="nav-button-caption">Next Project</p>
                     </div>
                 </div>

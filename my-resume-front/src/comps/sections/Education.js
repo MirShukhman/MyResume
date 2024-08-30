@@ -15,7 +15,7 @@ const Education = () => {
                 </div>
                 <div className='job-inner'>
                     <p className='job-place'>Python Full Stack Cource</p>
-                    <p className='job-dates'>Graduating: May 2024</p>
+                    <p className='job-dates'>Graduated: May 2024</p>
                     <p className='job-descript'>
                     </p>
                 </div>

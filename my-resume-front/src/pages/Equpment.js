@@ -5,16 +5,16 @@ import '../style/ProjectPage.css'
 import { FaCode } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
-import { SiFlask } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
-import { SiMicrosoftsqlserver } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
 import OpenImage from "../comps/OpenImage";
-import EventHubMobile from "./mobile-pages/EventHubMobile";
+import EqupmentMobile from "./mobile-pages/EqupmentMobile";
 import Clouds from "../comps/backround/Clouds";
 
 const Equpment = () => {
@@ -39,7 +39,7 @@ const Equpment = () => {
     return (
         <>
             {
-                window.innerWidth < 768 ? (<EventHubMobile />) :
+                window.innerWidth < 768 ? (<EqupmentMobile />) :
                     (
                         <div className="project-page" >
 
@@ -54,7 +54,7 @@ const Equpment = () => {
 
                                     <div className="nav-buttons" id='nav-buttons-equpment'>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/project-eventhub'); }}><IoArrowBackCircle /></button>
+                                            <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowBackCircle /></button>
                                             <p className="nav-button-caption">Prev Project</p>
                                         </div>
                                         <div className="nav-button">
@@ -62,7 +62,7 @@ const Equpment = () => {
                                             <p className="nav-button-caption">Home</p>
                                         </div>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/project-pegasus'); }}><IoArrowForwardCircleSharp /></button>
+                                            <button onClick={() => { handleNavigation('/project-eventhub'); }}><IoArrowForwardCircleSharp /></button>
                                             <p className="nav-button-caption">Next Project</p>
                                         </div>
                                     </div>
@@ -72,16 +72,16 @@ const Equpment = () => {
                                 <h2>Tech Stack:</h2>
                                 <div className="tech-stack">
                                     <div className='skill'>
-                                        <p>MSSQL</p>
-                                        <SiMicrosoftsqlserver className='skill-icon' />
+                                        <p>MySQL</p>
+                                        <GrMysql className='skill-icon' />
                                     </div>
                                     <div className='skill'>
                                         <p>Python</p>
                                         <FaPython className='skill-icon' />
                                     </div>
                                     <div className='skill'>
-                                        <p>Flask</p>
-                                        <SiFlask className='skill-icon' />
+                                        <p>Django</p>
+                                        <SiDjango className='skill-icon' />
                                     </div>
                                     <div className='skill'>
                                         <p>React</p>
@@ -166,7 +166,7 @@ const Equpment = () => {
                                                 <button id='proj-border-button'> <FaCode className='proj-icon' /> Code</button>
                                                 <button className="proj-button-shadow" id='code-button-equpment'></button>
                                             </div>
-                                            <div className="project-button" onClick={() => window.open('http://52.154.67.55', '_blank')}>
+                                            <div className="project-button" onClick={() => window.open('https://mirshukhman.github.io/Equpment/', '_blank')}>
                                                 <button id='proj-border-button'><TbWorld className='proj-icon' /> Live</button>
                                                 <button className="proj-button-shadow" id='live-button-equpment'></button>
                                             </div>

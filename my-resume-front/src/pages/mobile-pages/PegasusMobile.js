@@ -32,15 +32,15 @@ const PegasusMobile = () => {
 
                 <div className="nav-buttons-mobile" id='nav-buttons-pegasus'>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume/project-eventhub'); }}><IoArrowBackCircle /></button>
+                        <button onClick={() => { handleNavigation('/project-eventhub'); }}><IoArrowBackCircle /></button>
                         <p className="nav-button-caption">Prev Project</p>
                     </div>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume'); }}><IoHome /></button>
+                        <button onClick={() => { handleNavigation('/'); }}><IoHome /></button>
                         <p className="nav-button-caption">Home</p>
                     </div>
                     <div className="nav-button">
-                        <button onClick={() => { handleNavigation('/MyResume/project-smishing'); }}><IoArrowForwardCircleSharp /></button>
+                        <button onClick={() => { handleNavigation('/project-equpment'); }}><IoArrowForwardCircleSharp /></button>
                         <p className="nav-button-caption">Next Project</p>
                     </div>
                 </div>

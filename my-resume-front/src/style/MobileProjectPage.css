@@ -98,3 +98,12 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     margin-bottom: 1rem;
 }
+
+.proj-top-mobile #equpment-project-title h1.project-title{
+    font-size: 2.2rem;
+}
+
+.project-page-inner-mobile .tech-stack-mobile{
+    flex-wrap: wrap;
+    margin-right: 0.5rem;
+}

@@ -315,6 +315,10 @@
     padding-top: 1rem;
 }
 
+#equpment-project {
+    border-bottom: solid 3px #C5FF95;
+}
+
 #eventhub-project {
     border-bottom: solid 3px rgb(219, 162, 148);
 }
@@ -343,6 +347,27 @@
     font-weight: 500;
     margin-top: 0;
     cursor: pointer !important;
+}
+
+#equpment{
+    font-family:  "Moderustic", sans-serif;
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+    margin: 0;
+    background-color:#C5FF95;
+    color: #074173;
+    text-shadow: 2px 2px 2px #5debd7;
+}
+
+#equpment-bottom-title{
+    font-family:  "Moderustic", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0;
+    background-color:#C5FF95;
+    color: #074173;
+    text-shadow: 2px 2px 2px #5debd7;
 }
 
 #eventhub {
@@ -479,6 +504,18 @@
     margin-right: 1rem;
     font-family: var(--footer-font);
     font-size: 1rem;
+}
+
+#equpment-buttons #read-more-button {
+    background-color: rgba(197, 255, 149, 0.3);
+}
+
+#equpment-buttons #code-button {
+    background-color: rgba(197, 255, 149, 0.5);
+}
+
+#equpment-buttons #live-button {
+    background-color: rgba(197, 255, 149, 0.7);
 }
 
 /* education */

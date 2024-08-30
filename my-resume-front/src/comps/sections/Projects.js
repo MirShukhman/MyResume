@@ -28,8 +28,7 @@ const Projects = () => {
                         The Equipment Order Management System is a web application designed to streamline
                         equipment ordering for multi-branch establishments.
                         It offers branch and global admin interfaces for order creation, status tracking,
-                        equipment management, and user administration, all within a secure, token-based authentication
-                        system.
+                        equipment management, and user administration.
                     </div>
 
                     <div className="buttons" id='equpment-buttons'>
@@ -41,7 +40,7 @@ const Projects = () => {
                             <button id='border-button'> <FaCode className='proj-icon' /> Code</button>
                             <button className="button-shadow" id='code-button'></button>
                         </div>
-                        <div className="project-button" onClick={() => window.open('https://mirshukhman.github.io/equpment/', '_blank')}>
+                        <div className="project-button" onClick={() => window.open('https://mirshukhman.github.io/Equpment/', '_blank')}>
                             <button id='border-button'><TbWorld className='proj-icon' /> Live</button>
                             <button className="button-shadow" id='live-button'></button>
                         </div>
