@@ -99,17 +99,6 @@ const EventHub = () => {
                                     </div>
                                 </div>
 
-                                <h2>Deployed Using:</h2>
-                                <div className="tech-stack">
-                                    <div className='skill'>
-                                        <p>Azure</p>
-                                        <SiMicrosoftazure className='skill-icon' />
-                                    </div>
-                                    <div className='skill'>
-                                        <p>Docker</p>
-                                        <FaDocker className='skill-icon' />
-                                    </div>
-                                </div>
 
                                 <div className="project-main">
                                     <p className="project-expl">

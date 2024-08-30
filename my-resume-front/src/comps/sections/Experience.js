@@ -60,18 +60,7 @@ const Experience = () => {
                     <p className='job-descript'></p>
                 </div>
             </div>
-            <div className='job'>
-                <div className='row'>
-                    <GoTriangleRight className='job-icon' />
-                    <p className='job-title'>Barista and Cashier</p>
-                </div>
-                <div className='job-inner'>
-                    <p className='job-place'>Sprinzak Cafeteria</p>
-                    <p className='job-dates'>Nov 2016- May 2017</p>
-                    <p className='job-dates'>Oct 2013 - May 2015</p>
-                    <p className='job-descript'></p>
-                </div>
-            </div>
+
 
             <p className='volunteering'>Volunteering Work</p>
 

@@ -81,22 +81,6 @@ const EventHubMobile = () => {
                     </div>
                 </div>
 
-                <h2>Deployed Using:</h2>
-                <div className="tech-stack-mobile">
-                    <div className='skill'>
-                        <p>GitHub</p>
-                        <FaGithub className='skill-icon' />
-                    </div>
-                    <div className='skill'>
-                        <p>Azure</p>
-                        <SiMicrosoftazure className='skill-icon' />
-                    </div>
-                    <div className='skill'>
-                        <p>Docker</p>
-                        <FaDocker className='skill-icon' />
-                    </div>
-                </div>
-
                 <div className="project-main-mobile">
                     <p className="project-expl-mobile">
                         <p>

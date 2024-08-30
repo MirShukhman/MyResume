@@ -12,6 +12,8 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { SiMicrosoftazure } from "react-icons/si";
 import { FaDocker } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import { SiNgrok } from "react-icons/si";
 
 const Skills = () => {
 
@@ -49,8 +51,8 @@ const Skills = () => {
                     <RiJavascriptFill className='skill-icon' />
                 </div>
                 <div className='skill'>
-                    <p>SQL</p>
-                    <HiOutlineDatabase className='skill-icon' />
+                    <p>MySQL</p>
+                    <GrMysql className='skill-icon' />
                 </div>
             </div>
             <div className="row">
@@ -71,6 +73,7 @@ const Skills = () => {
                     <FaDocker className='skill-icon' />
                 </div>
             </div>
+            
         </div>
     )
 }

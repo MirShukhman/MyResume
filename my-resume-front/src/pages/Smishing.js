@@ -82,14 +82,6 @@ const Smishing = () => {
                             </div>
                         </div>
 
-                        <h2>Deployed Using:</h2>
-                        <div className="tech-stack">
-                            <div className='skill'>
-                                <p>GitHub</p>
-                                <FaGithub className='skill-icon' />
-                            </div>
-                        </div>
-
                         <div className="project-main">
                             <p className="project-expl">
                                 <p>
