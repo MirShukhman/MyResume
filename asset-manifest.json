@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bd438cd.css",
-    "main.js": "/static/js/main.09b5b96a.js",
+    "main.css": "/static/css/main.418a7206.css",
+    "main.js": "/static/js/main.8c680dea.js",
     "static/media/pegasus3.jpg": "/static/media/pegasus3.a3c1a6e3b978dc98c834.jpg",
     "static/media/eventhub2.jpg": "/static/media/eventhub2.97c6c586e9ade704f7cb.jpg",
     "static/media/pegasus.jpg": "/static/media/pegasus.87af445732073fdee855.jpg",
@@ -11,15 +11,18 @@
     "static/media/pegasus2.jpg": "/static/media/pegasus2.2d8ef12c25d0d055b55f.jpg",
     "static/media/how.jpg": "/static/media/how.337dbeab6532ed5a63eb.jpg",
     "static/media/smishing2.jpg": "/static/media/smishing2.337dbeab6532ed5a63eb.jpg",
+    "static/media/equpment3.png": "/static/media/equpment3.6c2a9b92bced428b60ec.png",
     "static/media/eventhub3.jpg": "/static/media/eventhub3.8dec9d985606be4135c3.jpg",
+    "static/media/equpment2.png": "/static/media/equpment2.c60bcbaf1309fef92126.png",
     "static/media/smishing3.jpg": "/static/media/smishing3.7c5879700dc4bcfcad85.jpg",
+    "static/media/equpment1.png": "/static/media/equpment1.2a65ec89ab4a54403bf5.png",
     "static/media/smishing1.jpg": "/static/media/smishing1.1024f42b6b5e132a4a95.jpg",
     "index.html": "/index.html",
-    "main.8bd438cd.css.map": "/static/css/main.8bd438cd.css.map",
-    "main.09b5b96a.js.map": "/static/js/main.09b5b96a.js.map"
+    "main.418a7206.css.map": "/static/css/main.418a7206.css.map",
+    "main.8c680dea.js.map": "/static/js/main.8c680dea.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bd438cd.css",
-    "static/js/main.09b5b96a.js"
+    "static/css/main.418a7206.css",
+    "static/js/main.8c680dea.js"
   ]
 }
