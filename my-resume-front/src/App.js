@@ -5,7 +5,7 @@ import ButtonComp from './comps/ButtonComp';
 import Footer from './comps/Footer';
 import EventHub from './pages/EventHub';
 import Pegasus from './pages/Pegasus';
-import Smishing from './pages/Smishing';
+import Equpment from './pages/Equpment';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
 
         <Route path='/project-eventhub' element={<EventHub />} />
         <Route path='/project-pegasus' element={<Pegasus />} />
-        <Route path='/project-smishing' element={<Smishing />} />
+        <Route path='/project-equpment' element={<Equpment />} />
 
       </Routes>
 

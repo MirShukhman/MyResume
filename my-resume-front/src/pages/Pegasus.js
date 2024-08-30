@@ -62,7 +62,7 @@ const Pegasus = () => {
                                             <p className="nav-button-caption">Home</p>
                                         </div>
                                         <div className="nav-button">
-                                            <button onClick={() => { handleNavigation('/project-smishing'); }}><IoArrowForwardCircleSharp /></button>
+                                            <button onClick={() => { handleNavigation('/project-equpment'); }}><IoArrowForwardCircleSharp /></button>
                                             <p className="nav-button-caption">Next Project</p>
                                         </div>
                                     </div>

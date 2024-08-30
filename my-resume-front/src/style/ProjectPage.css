@@ -375,3 +375,86 @@
     border-left: solid 1px rgb(121, 179, 197);
     border-right: solid 1px rgb(121, 179, 197);
 }
+
+/*Equpment*/
+#nav-buttons-equpment .nav-button:hover button,
+#nav-buttons-equpment .nav-button:hover .nav-button-caption {
+    color: rgba(121, 179, 197, 0.9);
+}
+
+#nav-buttons-equpment .nav-button button {
+    color: rgba(121, 179, 197, 0.5);
+}
+
+#equpment-project-title h1 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(121, 179, 197);
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+
+.proj-top h2 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.project-screenshots-equpment #scrnshot1 {
+    background-image: url(./images/prj-screenshots/equpment1.png);
+    background-size: cover;
+}
+
+.project-screenshots-equpment #scrnshot2 {
+    background-image: url(./images/prj-screenshots/equpment2.png);
+    background-size: cover;
+}
+
+.project-screenshots-equpment #scrnshot3 {
+    background-image: url(./images/prj-screenshots/equpment3.png);
+    background-size: cover;
+}
+
+.project-screenshots-equpment {
+    margin-bottom: 2rem;
+}
+
+#code-button-equpment {
+    background-color: rgba(121, 179, 197, 0.3);
+}
+
+#live-button-equpment {
+    background-color: rgba(121, 179, 197, 0.6);
+    width: 95px !important;
+}
+
+#proj-border-button:active+#code-button-equpment,
+#proj-border-button:active+#live-button-equpment {
+    background-color: rgba(121, 179, 197, 0.9);
+}
+
+#project-expl-equpment thead {
+    background-color: rgba(121, 179, 197, 0.2);
+}
+
+#project-expl-equpment td {
+    border-top: solid 1px rgb(121, 179, 197);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#border-equpment {
+    border-left: solid 1px rgb(121, 179, 197);
+    border-right: solid 1px rgb(121, 179, 197);
+}
+
+#project-expl-equpment h3,
+#project-expl-equpment h4,
+#project-expl-equpment ul,
+#project-expl-equpment p {
+    margin: 0;
+}
+
+#project-expl-equpment li {
+    margin-bottom: 0.5rem;
+}

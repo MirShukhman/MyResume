@@ -15,6 +15,41 @@ const Projects = () => {
     return (
         <div className="projects">
 
+            <div className="project" id='equpment-project'>
+
+                <p className="title" id='equpment' onClick={() => { handleNavigation('/project-equpment'); }}>
+                    Equpment Orders</p>
+                <p className="title" id='equpment-bottom-title'
+                    onClick={() => { handleNavigation('/project-equpment'); }}>
+                    Mangment System</p>
+                <div className='proj-bottom' id='equpment-bottom'>
+                    <div className="description">
+
+                        The Equipment Order Management System is a web application designed to streamline
+                        equipment ordering for multi-branch establishments.
+                        It offers branch and global admin interfaces for order creation, status tracking,
+                        equipment management, and user administration, all within a secure, token-based authentication
+                        system.
+                    </div>
+
+                    <div className="buttons" id='equpment-buttons'>
+                        <div className="project-button" onClick={() => { handleNavigation('/project-equpment'); }}>
+                            <button id='border-button'>Read More</button>
+                            <button className="button-shadow" id='read-more-button'></button>
+                        </div>
+                        <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/equpment', '_blank')}>
+                            <button id='border-button'> <FaCode className='proj-icon' /> Code</button>
+                            <button className="button-shadow" id='code-button'></button>
+                        </div>
+                        <div className="project-button" onClick={() => window.open('https://mirshukhman.github.io/equpment/', '_blank')}>
+                            <button id='border-button'><TbWorld className='proj-icon' /> Live</button>
+                            <button className="button-shadow" id='live-button'></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div className="project" id='eventhub-project'>
 
                 <p className="title" id='eventhub' onClick={() => { handleNavigation('/project-eventhub'); }}>
@@ -65,36 +100,6 @@ const Projects = () => {
                             <button className="button-shadow" id='live-button'></button>
                         </div> */
                         }
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="project" id='smishing-project'>
-
-                <p className="title" id='smishing' onClick={() => { handleNavigation('/project-smishing'); }}>
-                    Smishing Buster</p>
-                <p className="title" id='smishing-bottom-title'
-                    onClick={() => { handleNavigation('/MyResume/project-smishing'); }}>
-                    App Presentation</p>
-                <div className='proj-bottom' id='smishing-bottom'>
-                    <div className="description">An Academic Presentation Webpage of a final CS Degree Project.
-                        The Project is a Smishing Buster App and the Webpage showcases the app for academic
-                        presentation purposes.</div>
-
-                    <div className="buttons" id='smishing-buttons'>
-                        <div className="project-button" onClick={() => { handleNavigation('/project-smishing'); }}>
-                            <button id='border-button'>Read More</button>
-                            <button className="button-shadow" id='read-more-button'></button>
-                        </div>
-                        <div className="project-button" onClick={() => window.open('https://github.com/MirShukhman/Smishing-Buster', '_blank')}>
-                            <button id='border-button'> <FaCode className='proj-icon' /> Code</button>
-                            <button className="button-shadow" id='code-button'></button>
-                        </div>
-                        <div className="project-button" onClick={() => window.open('https://mirshukhman.github.io/Smishing-Buster/', '_blank')}>
-                            <button id='border-button'><TbWorld className='proj-icon' /> Live</button>
-                            <button className="button-shadow" id='live-button'></button>
-                        </div>
                     </div>
 
                 </div>
